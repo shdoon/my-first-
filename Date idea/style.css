@@ -1,0 +1,48 @@
+body {
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+button {
+    background-color: #ff7eb6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+button;:hover {
+    transform: scale(1,05);
+
+}
+#noBtn {
+    position: relative;
+}
+.flower {
+    position: fixed;
+    top: -30px;
+    font-size: 30px;
+    animation: fall 4s linear forwards;
+}
+@keyframes fall {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(110vh);
+    }
+}
